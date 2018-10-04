@@ -1,0 +1,21 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title-splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#title-splash > h1 {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+#title-splash > p {
+    font-weight: 400;
+    font-size: 25px;
+}
