@@ -1,5 +1,5 @@
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html, body {
@@ -12,19 +12,32 @@ body {
 }
 
 .navbar {
-    padding: 5px;
+    padding: 25px 5px 5px 5px;
     height: 80px;
-    background-color: white;
+    background-color: #3D53FF;
 
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center;;
+}
+
+.navbar:hover {
+    background-color: white;
 }
 
 .navbar-pages {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.navbar-pages > a {
+    color: white;
+    padding: 10px;
+    align-self: center;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .navbar-brand {
@@ -36,7 +49,6 @@ body {
     width: auto;
 }
 
-
 #title-splash {
     position: absolute;
     top: 50%;
@@ -45,12 +57,46 @@ body {
     text-align: center;
 }
 
-#title-splash > h1 {
-    font-weight: bolder;
+.hero {
+    margin: 0;
+    background-color: #3D53FF;
+    color: white;
+    padding: 100px 50px 100px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    
+    text-align: center;
+}
+
+.hero > h1 {
+    font-weight: 800;
     font-size: 100px;
 }
 
-#title-splash > p {
-    font-weight: 400;
-    font-size: 25px;
+.hero > h3 {
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.hero > a {
+    background-color: white;
+    color: #3D53FF;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 25px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
 }
