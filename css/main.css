@@ -11,8 +11,19 @@ body {
     background-color: grey;
 }
 
-.col-50 {
-    width: 50%;
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 25px;
+    font-size: 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border: 0px solid #000000;
 }
 
 .navbar {
@@ -126,18 +137,75 @@ body {
     font-size: 24px;
 }
 
+#panel3 {
+    background-color: black;
+    color: white;
+}
 
-.button {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 14px 25px;
-    font-size: 20px;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
+#panel3 > h1{
+    font-size: 100px;
+}
 
-    border-radius: 6px 6px 6px 6px;
-    -moz-border-radius: 6px 6px 6px 6px;
-    -webkit-border-radius: 6px 6px 6px 6px;
-    border: 0px solid #000000;
+#panel4 {
+    background: #3D53FF;
+    color: white;
+}
+
+#panel4 > h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+}
+
+#panel4 > h3 {
+    font-size: 36px;
+}
+
+#register {
+    text-align: left;
+    align-self: center;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#register > input {
+    padding: 10px;
+
+}
+
+#register > p{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+#register > button {
+    background-color: white;
+    color: #3D53FF;
+    align-self: flex-start;
+    margin: 20px 0 0 0;
+}
+
+.footer {
+    background: #3D53FF;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.line {
+    padding: 25px 0 0 0 ;
+    border-top: 1px solid white;
+}
+
+.footer-brand {
+    align-self: center;
+    height: 85px;
+    width: auto;
 }
