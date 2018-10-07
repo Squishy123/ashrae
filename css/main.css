@@ -11,6 +11,10 @@ body {
     background-color: grey;
 }
 
+.col-50 {
+    width: 50%;
+}
+
 .navbar {
     padding: 25px 5px 5px 5px;
     height: 80px;
@@ -18,11 +22,7 @@ body {
 
     display:flex;
     flex-direction: row;
-    justify-content: center;;
-}
-
-.navbar:hover {
-    background-color: white;
+    justify-content: center;
 }
 
 .navbar-pages {
@@ -38,6 +38,10 @@ body {
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
+}
+
+.navbar-pages > a:hover {
+    color: rgb(218, 216, 216);
 }
 
 .navbar-brand {
@@ -59,32 +63,69 @@ body {
 
 .hero {
     margin: 0;
-    background-color: #3D53FF;
-    color: white;
     padding: 100px 50px 100px 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Raleway', sans-serif;
-    
     text-align: center;
 }
 
-.hero > h1 {
+#panel1 {
+    background-color: #3D53FF;
+    color: white;
+}
+
+#panel1 > h1 {
     font-weight: 800;
     font-size: 100px;
 }
 
-.hero > h3 {
+#panel1 > h3 {
     font-size: 50px;
     font-family: 'Merriweather', serif;
 }
 
-.hero > a {
+#panel1 > a {
     background-color: white;
     color: #3D53FF;
 }
+
+#panel1 > a:hover {
+    background-color:rgb(218, 216, 216);
+}
+
+#panel2 {
+    padding: 200px 50px 200px 50px;
+    background-color: white;
+    color: black;
+
+    display: grid;
+     height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1px 1px;
+    grid-template-areas: ". .";
+}
+
+#panel2-sub1 > h1 {
+    font-family: 'Volkhov', serif;
+    font-size: 100px;
+}
+
+#panel2-sub2 > h1 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#panel2-sub2 > p {
+    text-align: left;
+    font-weight: 200;
+    font-size: 24px;
+}
+
 
 .button {
     margin-left: auto;
