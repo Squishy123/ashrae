@@ -55,8 +55,18 @@ body {
 }
 
 @media(max-width: 999px) {
-    .navbar-pages {
+     .navbar-pages {
         visibility: collapse;
+    }
+
+    .change.navbar-pages {
+        align-self: center;
+        visibility: visible;
+        flex-wrap: wrap;
+    }
+
+    .navbar-pages > a {
+        flex-basis: 50%;
     }
 
     .navbar-brand {
