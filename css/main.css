@@ -3,8 +3,12 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,21 +29,71 @@ body {
     -webkit-border-radius: 6px 6px 6px 6px;
     border: 0px solid #000000;
 }
-
-.navbar {
-    padding: 25px 5px 5px 5px;
-    height: 80px;
-    background-color: #3D53FF;
-
+.navbar  {
     display:flex;
     flex-direction: row;
     justify-content: center;
+
+    position: sticky;
+    top: 0;
+    padding: 25px 5px 5px 5px;
+    height: 80px;
+    background-color: #3D53FF;
 }
 
-.navbar-pages {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.menu-collapse {
+    visibility: hidden;
+}
+
+@media(min-width: 1000px) {
+    .navbar-pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 999px) {
+    .navbar-pages {
+        visibility: collapse;
+    }
+
+    .navbar-brand {
+        order: -1;
+        transition: order 0.1s linear; 
+    }
+
+    .menu-collapse {
+        order: 3;
+        margin: 20px 15px 15px 15px;
+        visibility: visible;
+        align-self: flex-start;
+        display: inline-block;
+        cursor: pointer; 
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
+        transform: rotate(-45deg) translate(-8px, 6px) ;
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
+        transform: rotate(45deg) translate(-9px, -8px) ;
+    }
 }
 
 .navbar-pages > a {
@@ -208,4 +262,8 @@ body {
     align-self: center;
     height: 85px;
     width: auto;
+}
+
+.footer > p {
+    font-weight: 600;
 }
