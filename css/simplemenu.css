@@ -1,0 +1,140 @@
+.simple-menu {
+    padding-top: 10px;
+}
+
+.menu-logo {
+    height: 65px;
+    width: auto;
+    position: fixed;
+    left: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+}
+
+.menu-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75px;
+    background-color: #3D53FF;
+}
+
+.menu-collapse-toggle {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 33px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+}
+
+.menu-collapse {
+    margin: 0;
+    background-color: white;
+    position: fixed;
+    top:0;
+    right: 0;
+}
+
+.menu-collapse-pages {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.menu-collapse-page {
+    list-style-type: none;
+    display: block;
+    padding: 20px;
+
+    align-self: flex-end;
+    width: 100%;
+
+
+    border-bottom-width: 0.0625rem;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(219, 217, 210);
+}
+
+
+@media (min-width: 811px) {
+    .menu-pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .menu-page {
+        padding: 10px;
+        list-style-type: none;
+        flex-basis: auto;
+    }
+
+    .menu-collapse {
+        visibility: collapse;
+    }
+
+    .menu-collapse-page {
+        visibility: collapse;
+    }
+
+    .menu-collapse-toggle {
+        visibility: collapse;
+    }
+
+    .menu-logo {
+        opacity: 1;
+    }
+
+    .menu-link {
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 810px) {
+    .menu-page {
+        visibility: collapse;
+    }
+
+    .menu-collapse {
+        height: 100vh;
+        width: 75vw;
+    }
+
+    .menu-collapse-toggle {
+        visibility: visible;
+    }
+
+    .menu-link {
+        color: black;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 550px) {
+    .menu-collapse {
+        width: 100vw;
+    }
+
+    .menu-collapse-toggle {
+        visibility: visible;
+    }
+
+    .menu-link {
+        color: black;
+        font-weight: 600;
+    }
+}

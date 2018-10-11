@@ -29,103 +29,86 @@ body {
     -webkit-border-radius: 6px 6px 6px 6px;
     border: 0px solid #000000;
 }
-.navbar  {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
 
-    position: sticky;
-    top: 0;
-    padding: 25px 5px 5px 5px;
-    height: 80px;
-    background-color: #3D53FF;
-}
-
-.menu-collapse {
-    visibility: hidden;
-}
 
 @media(min-width: 1000px) {
-    .navbar-pages {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    #panel1 > h1{
+        font-size: 100px;
     }
 
+    #panel3 > h3 {
+        font-size: 50px;
+    }
+
+    #panel2 {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px 10px;
+        grid-template-areas: ". .";
+    }
 }
 
 @media(max-width: 999px) {
-     .navbar-pages {
-        visibility: collapse;
+
+    #panel1 > h1 {
+        font-size: 65px;
     }
 
-    .change.navbar-pages {
+    #panel1 > h3 {
+        font-size:30px;
+    }
+
+    #panel3 > h1{
+        font-size: 100px;
+    }    
+
+    #panel2-sub1 > h1 {
+        font-family: 'Volkhov', serif;
+        font-size: 100px;
+    }
+
+    #register {
+        text-align: left;
         align-self: center;
-        visibility: visible;
-        flex-wrap: wrap;
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
-
-    .navbar-pages > a {
-        flex-basis: 50%;
-    }
-
-    .navbar-brand {
-        order: -1;
-        transition: order 0.1s linear; 
-    }
-
-    .menu-collapse {
-        order: 3;
-        margin: 20px 15px 15px 15px;
-        visibility: visible;
-        align-self: flex-start;
-        display: inline-block;
-        cursor: pointer; 
-    }
-
-    .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
-
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-8px, 6px) ;
-        transform: rotate(-45deg) translate(-8px, 6px) ;
-    }
-
-    .change .bar2 {
-        opacity: 0;
-    }
-
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -8px) ;
-        transform: rotate(45deg) translate(-9px, -8px) ;
+    
+    #register > input {
+        padding: 10px;
+        width: 500px;
     }
 }
 
-.navbar-pages > a {
-    color: white;
-    padding: 10px;
-    align-self: center;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
+@media(max-width: 670px) {
+    #panel3 > h1 {
+        font-size: 50px;
+    }
+
+    #panel2-sub1 > h1 {
+        font-size: 50px;
+    }
 }
 
-.navbar-pages > a:hover {
-    color: rgb(218, 216, 216);
-}
+@media(max-width: 600px) {
 
-.navbar-brand {
-    padding: 5px;
-}
+    #panel1 > h1 {
+        font-size: 35px;
+    }
 
-.navbar-brand > img {
-    height: 65px;
-    width: auto;
+    #panel1 > h3 {
+        font-size: 24px;
+    }
+
+    
+    #register > input {
+        padding: 5px;
+        width: 300px;
+    }
 }
 
 #title-splash {
@@ -154,11 +137,9 @@ body {
 
 #panel1 > h1 {
     font-weight: 800;
-    font-size: 100px;
 }
 
 #panel1 > h3 {
-    font-size: 50px;
     font-family: 'Merriweather', serif;
 }
 
@@ -175,18 +156,10 @@ body {
     padding: 200px 50px 200px 50px;
     background-color: white;
     color: black;
-
-    display: grid;
-     height: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 1px 1px;
-    grid-template-areas: ". .";
 }
 
 #panel2-sub1 > h1 {
     font-family: 'Volkhov', serif;
-    font-size: 100px;
 }
 
 #panel2-sub2 > h1 {
@@ -206,10 +179,6 @@ body {
     color: white;
 }
 
-#panel3 > h1{
-    font-size: 100px;
-}
-
 #panel4 {
     background: #3D53FF;
     color: white;
@@ -222,20 +191,6 @@ body {
 
 #panel4 > h3 {
     font-size: 36px;
-}
-
-#register {
-    text-align: left;
-    align-self: center;
-
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#register > input {
-    padding: 10px;
-
 }
 
 #register > p{
