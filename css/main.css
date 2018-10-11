@@ -95,6 +95,9 @@ body {
 }
 
 @media(max-width: 600px) {
+    #panel1 {
+        padding: 100px 20px 100px 20px;
+    }
 
     #panel1 > h1 {
         font-size: 35px;
