@@ -111,12 +111,22 @@ class SimpleMenu {
             }
         });
 
+        //change color
+        anime({
+            targets: [this.bar1, this.bar2, this.bar3],
+            backgroundColor: {
+                value: '#fff',
+                duration: 0,
+                easing: 'easeInQuad'
+            }
+        })
+
         //add listener for desktop media query
         window.matchMedia("(min-width: 700px)").addListener(((m) => {
             if (m.matches) {
                 this.logo.style.opacity = 1;
             } else {
-                if(!this.collapseStatus) this.logo.style.opacity = 0;
+                if (!this.collapseStatus) this.logo.style.opacity = 0;
             }
         }).bind(this))
     }
@@ -130,6 +140,16 @@ class SimpleMenu {
                     targets: this.logo,
                     opacity: {
                         value: 0,
+                        duration: 500,
+                        easing: 'easeInQuad'
+                    }
+                })
+
+                //change color
+                anime({
+                    targets: [this.bar1, this.bar2, this.bar3],
+                    backgroundColor: {
+                        value: '#333',
                         duration: 500,
                         easing: 'easeInQuad'
                     }
@@ -201,6 +221,17 @@ class SimpleMenu {
                         easing: 'easeInQuad'
                     }
                 })
+
+                //change color
+                anime({
+                    targets: [this.bar1, this.bar2, this.bar3],
+                    backgroundColor: {
+                        value: '#fff',
+                        duration: 500,
+                        easing: 'easeInQuad'
+                    }
+                })
+
                 //bar1
                 anime({
                     targets: this.bar1,
