@@ -162,16 +162,6 @@ class SimpleMenu {
                         value: 45,
                         duration: 500,
                         easing: 'easeInOutQuint'
-                    },
-                    translateX: {
-                        value: 0,
-                        duration: 500,
-                        easing: 'easeInOutQuint'
-                    },
-                    translateY: {
-                        value: 0,
-                        duration: 500,
-                        easing: 'easeInOutQuint'
                     }
                 })
                 //bar2
@@ -179,7 +169,7 @@ class SimpleMenu {
                     targets: this.bar2,
                     opacity: {
                         value: 0,
-                        duration: 500,
+                        duration: 300,
                         easing: 'easeInOutQuint'
                     }
                 })
