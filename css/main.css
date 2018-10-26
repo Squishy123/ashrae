@@ -155,7 +155,7 @@ body {
 }
 
 #panel1 {
-    background-color: #3D53FF;
+    background-color: #6870a8;
     color: white;
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 #panel4 {
-    background: #3D53FF;
+    background: #6870A8;
     color: white;
 }
 
@@ -225,13 +225,13 @@ body {
 
 #register > button {
     background-color: white;
-    color: #3D53FF;
+    color: #6870a8;
     align-self: flex-start;
     margin: 20px 0 0 0;
 }
 
 .footer {
-    background: #3D53FF;
+    background: #6870a8;
     color: white;
     padding: 20px;
 
